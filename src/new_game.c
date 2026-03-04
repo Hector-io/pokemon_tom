@@ -63,6 +63,9 @@ static void ResetDexNav(void);
 EWRAM_DATA bool8 gDifferentSaveFile = FALSE;
 EWRAM_DATA bool8 gEnableContestDebugging = FALSE;
 
+// Forced player name for new game (uses proper game text encoding)
+static const u8 sPlayerNameTom[] = _("TOM");
+
 static const struct ContestWinner sContestWinnerPicDummy =
 {
     .monName = _(""),
@@ -180,6 +183,8 @@ void NewGameInitData(void)
     gSaveBlock2Ptr->specialSaveWarpFlags = 0;
     gSaveBlock2Ptr->gcnLinkFlags = 0;
     InitPlayerTrainerId();
+    StringCopy(gSaveBlock2Ptr->playerName, sPlayerNameTom);
+    gSaveBlock2Ptr->playerGender = MALE;
     PlayTimeCounter_Reset();
     ClearPokedexFlags();
     InitEventData();
