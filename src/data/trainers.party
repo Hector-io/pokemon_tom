@@ -4799,20 +4799,20 @@ Double Battle: No
 AI: Basic Trainer
 
 Geodude
-Level: 12
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
 - Rock Throw
 - Rock Tomb
 
-Geodude
+Sudowoodo
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
+- Block
+- Copycat
 - Rock Throw
-- Rock Tomb
+- Low Kick
 
 Nosepass @ Oran Berry
 Level: 15
@@ -14187,7 +14187,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Nosepass @ Sitrus Berry
+Nosepass @ Hard Stone
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
