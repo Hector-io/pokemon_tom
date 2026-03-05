@@ -3,9 +3,6 @@
 ## Early Game: Start → Roxanne
 
 ### Core Gameplay
-[ ] Force Dracovish as the starter
-[ ] Check first rival battle balance with new starter
-[ ] Adjust early-game difficulty if Dracovish is too strong
 
 ### Wild Encounters
 [ ] Route 101 encounter table
