@@ -15,11 +15,8 @@ MauvilleCity_GameCorner_MapScripts::
 MauvilleCity_GameCorner_EventScript_CoinsClerk::
 	lock
 	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner, MSGBOX_DEFAULT
 	checkitem ITEM_COIN_CASE
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NeedCoinCase
-	message MauvilleCity_GameCorner_Text_WereYouLookingForCoins
-	waitmessage
 	showmoneybox 0, 0
 	showcoinsbox 1, 6
 	goto MauvilleCity_GameCorner_EventScript_ChooseCoinsDefault50
