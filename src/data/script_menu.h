@@ -285,9 +285,111 @@ static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 
 static const struct MenuAction MultichoiceList_CasinoPrizes[] =
 {
-    {COMPOUND_STRING("POTION - 50 COINS")},
-    {COMPOUND_STRING("SUPER POTION - 100 COINS")},
-    {COMPOUND_STRING("HYPER POTION - 200 COINS")},
+    {COMPOUND_STRING("ARTICUNO - 600 COINS")},
+    {COMPOUND_STRING("ZAPDOS - 700 COINS")},
+    {COMPOUND_STRING("MOLTRES - 800 COINS")},
+    {COMPOUND_STRING("MEWTWO - 1200 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Johto[] =
+{
+    {COMPOUND_STRING("RAIKOU - 700 COINS")},
+    {COMPOUND_STRING("ENTEI - 700 COINS")},
+    {COMPOUND_STRING("SUICUNE - 800 COINS")},
+    {COMPOUND_STRING("LUGIA - 1200 COINS")},
+    {COMPOUND_STRING("HO-OH - 1200 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Sinnoh[] =
+{
+    {COMPOUND_STRING("UXIE - 800 COINS")},
+    {COMPOUND_STRING("MESPRIT - 800 COINS")},
+    {COMPOUND_STRING("AZELF - 800 COINS")},
+    {COMPOUND_STRING("DIALGA - 1200 COINS")},
+    {COMPOUND_STRING("PALKIA - 1200 COINS")},
+    {COMPOUND_STRING("GIRATINA - 1300 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Unova[] =
+{
+    {COMPOUND_STRING("COBALION - 900 COINS")},
+    {COMPOUND_STRING("TERRAKION - 900 COINS")},
+    {COMPOUND_STRING("VIRIZION - 900 COINS")},
+    {COMPOUND_STRING("RESHIRAM - 1300 COINS")},
+    {COMPOUND_STRING("ZEKROM - 1300 COINS")},
+    {COMPOUND_STRING("KYUREM - 1400 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Kalos[] =
+{
+    {COMPOUND_STRING("XERNEAS - 1400 COINS")},
+    {COMPOUND_STRING("YVELTAL - 1400 COINS")},
+    {COMPOUND_STRING("ZYGARDE - 1500 COINS")},
+    {COMPOUND_STRING("DIANCIE - 1500 COINS")},
+    {COMPOUND_STRING("HOOPA - 1500 COINS")},
+    {COMPOUND_STRING("VOLCANION - 1500 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Alola[] =
+{
+    {COMPOUND_STRING("TAPU KOKO - 1200 COINS")},
+    {COMPOUND_STRING("TAPU LELE - 1200 COINS")},
+    {COMPOUND_STRING("TAPU BULU - 1200 COINS")},
+    {COMPOUND_STRING("TAPU FINI - 1200 COINS")},
+    {COMPOUND_STRING("SOLGALEO - 1600 COINS")},
+    {COMPOUND_STRING("LUNALA - 1600 COINS")},
+    {COMPOUND_STRING("NECROZMA - 1700 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Galar[] =
+{
+    {COMPOUND_STRING("ZACIAN - 1800 COINS")},
+    {COMPOUND_STRING("ZAMAZENTA - 1800 COINS")},
+    {COMPOUND_STRING("ETERNATUS - 2000 COINS")},
+    {COMPOUND_STRING("KUBFU - 900 COINS")},
+    {COMPOUND_STRING("URSHIFU - 1200 COINS")},
+    {COMPOUND_STRING("CALYREX - 1500 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Paldea[] =
+{
+    {COMPOUND_STRING("KORAIDON - 2000 COINS")},
+    {COMPOUND_STRING("MIRAIDON - 2000 COINS")},
+    {COMPOUND_STRING("WO-CHIEN - 1400 COINS")},
+    {COMPOUND_STRING("CHIEN-PAO - 1400 COINS")},
+    {COMPOUND_STRING("TING-LU - 1400 COINS")},
+    {COMPOUND_STRING("CHI-YU - 1400 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Mythicals[] =
+{
+    {COMPOUND_STRING("MEW - 2000 COINS")},
+    {COMPOUND_STRING("CELEBI - 2000 COINS")},
+    {COMPOUND_STRING("JIRACHI - 2200 COINS")},
+    {COMPOUND_STRING("DEOXYS - 2400 COINS")},
+    {COMPOUND_STRING("ARCEUS - 3000 COINS")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Items[] =
+{
+    {COMPOUND_STRING("DNA SPLICERS - 50 COINS")},
+    {COMPOUND_STRING("N-SOLARIZER - 50 COINS")},
+    {COMPOUND_STRING("N-LUNARIZER - 50 COINS")},
+    {COMPOUND_STRING("REVEAL GLASS - 50 COINS")},
+    {COMPOUND_STRING("GRACIDEA - 50 COINS")},
+    {COMPOUND_STRING("RUSTED SWORD - 50 COINS")},
+    {COMPOUND_STRING("RUSTED SHIELD - 50 COINS")},
+    {COMPOUND_STRING("REINS OF UNITY - 50 COINS")},
+    {COMPOUND_STRING("PRISON BOTTLE - 50 COINS")},
     {gText_Exit},
 };
 
@@ -1150,8 +1252,16 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_MECHADOLL5_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q1),
     [MULTI_MECHADOLL5_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q2),
     [MULTI_MECHADOLL5_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q3),
-    [MULTI_UNUSED_40]                  = MULTICHOICE(MultichoiceList_CasinoPrizes),
-    [MULTI_UNUSED_41]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_CASINO_KANTO]               = MULTICHOICE(MultichoiceList_CasinoPrizes),
+    [MULTI_CASINO_JOHTO]               = MULTICHOICE(MultichoiceList_Casino_Johto),
+    [MULTI_CASINO_SINNOH]              = MULTICHOICE(MultichoiceList_Casino_Sinnoh),
+    [MULTI_CASINO_UNOVA]               = MULTICHOICE(MultichoiceList_Casino_Unova),
+    [MULTI_CASINO_KALOS]               = MULTICHOICE(MultichoiceList_Casino_Kalos),
+    [MULTI_CASINO_ALOLA]               = MULTICHOICE(MultichoiceList_Casino_Alola),
+    [MULTI_CASINO_GALAR]               = MULTICHOICE(MultichoiceList_Casino_Galar),
+    [MULTI_CASINO_PALDEA]              = MULTICHOICE(MultichoiceList_Casino_Paldea),
+    [MULTI_CASINO_MYTHICALS]           = MULTICHOICE(MultichoiceList_Casino_Mythicals),
+    [MULTI_CASINO_ITEMS]               = MULTICHOICE(MultichoiceList_Casino_Items),
     [MULTI_VENDING_MACHINE]            = MULTICHOICE(MultichoiceList_VendingMachine),
     [MULTI_MACH_BIKE_INFO]             = MULTICHOICE(MultichoiceList_MachBikeInfo),
     [MULTI_ACRO_BIKE_INFO]             = MULTICHOICE(MultichoiceList_AcroBikeInfo),

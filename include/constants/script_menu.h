@@ -50,6 +50,8 @@
 #define MULTI_MECHADOLL5_Q3                39
 #define MULTI_UNUSED_40                    40
 #define MULTI_UNUSED_41                    41
+#define MULTI_CASINO_KANTO                 MULTI_UNUSED_40
+#define MULTI_CASINO_JOHTO                 MULTI_UNUSED_41
 #define MULTI_VENDING_MACHINE              42
 #define MULTI_MACH_BIKE_INFO               43
 #define MULTI_ACRO_BIKE_INFO               44
@@ -167,6 +169,25 @@
 #define MULTI_HOF_VICTORIES_QUIT                         156
 #define MULTI_EGGS_VICTORIES_QUIT                        157
 #define MULTI_HOF_EGGS_VICTORIES_QUIT                    158
+
+#define MULTI_CASINO_SINNOH                159
+#define MULTI_CASINO_UNOVA                 160
+#define MULTI_CASINO_KALOS                 161
+#define MULTI_CASINO_ALOLA                 162
+#define MULTI_CASINO_GALAR                 163
+#define MULTI_CASINO_PALDEA                164
+#define MULTI_CASINO_MYTHICALS             165
+#define MULTI_CASINO_ITEMS                 166
+
+// Legacy aliases (kept so older references still compile)
+#define MULTI_UNUSED_42 MULTI_CASINO_SINNOH
+#define MULTI_UNUSED_43 MULTI_CASINO_UNOVA
+#define MULTI_UNUSED_44 MULTI_CASINO_KALOS
+#define MULTI_UNUSED_45 MULTI_CASINO_ALOLA
+#define MULTI_UNUSED_46 MULTI_CASINO_GALAR
+#define MULTI_UNUSED_47 MULTI_CASINO_PALDEA
+#define MULTI_UNUSED_48 MULTI_CASINO_MYTHICALS
+#define MULTI_UNUSED_49 MULTI_CASINO_ITEMS
 
 #define MULTI_NONE 255
 
