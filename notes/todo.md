@@ -49,15 +49,14 @@
 
 # Other stuff
 
-Dracovish encounter static Rusturf tunnel blocking the way. A strange ancient Pokémon appeared! Wild Dracovish appeared! Lvl 20
+Dracovish encounter static Rusturf tunnel blocking the way. A strange ancient Pokémon appeared! Wild Dracovish appeared! Lvl 20 
 
-Give all items needed for all evo lines I've added:
-Shiny stones, Sun stones, Moon stones, Leaf stones, Razor fangs, Razor claws, Dragon claws, 
-
-Add mechanics needed for pokemon I added which aren't in Emerald normally
+Check if I need to add mechanics needed for pokemon I added which aren't in Emerald normally
 
 Add regeleki and regidrago
 
 Add slot machines in every pokemart. Other gambling stuff too? 
 
 Replace regi trio with victini, guzzlord, lugia
+
+FOSSIL CHANGES
