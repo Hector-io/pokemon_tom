@@ -275,10 +275,19 @@ static const struct MenuAction MultichoiceList_GameCornerTMs[] =
     {gText_Exit},
 };
 
+
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
     {COMPOUND_STRING("  50 COINS    ¥1,000")},
     {COMPOUND_STRING("500 COINS  ¥10,000")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_CasinoPrizes[] =
+{
+    {COMPOUND_STRING("POTION - 50 COINS")},
+    {COMPOUND_STRING("SUPER POTION - 100 COINS")},
+    {COMPOUND_STRING("HYPER POTION - 200 COINS")},
     {gText_Exit},
 };
 
@@ -1141,7 +1150,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_MECHADOLL5_Q1]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q1),
     [MULTI_MECHADOLL5_Q2]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q2),
     [MULTI_MECHADOLL5_Q3]              = MULTICHOICE(MultichoiceList_Mechadoll5_Q3),
-    [MULTI_UNUSED_40]                  = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_UNUSED_40]                  = MULTICHOICE(MultichoiceList_CasinoPrizes),
     [MULTI_UNUSED_41]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_VENDING_MACHINE]            = MULTICHOICE(MultichoiceList_VendingMachine),
     [MULTI_MACH_BIKE_INFO]             = MULTICHOICE(MultichoiceList_MachBikeInfo),

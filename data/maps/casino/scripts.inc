@@ -47,3 +47,66 @@ Casino_EventScript_CoinVendor::
 Casino_Text_CoinVendorWelcome:
     .string "Welcome to the CASINO!\n"
     .string "How many coins would you like?$"
+
+Casino_EventScript_PrizeVendor::
+    lock
+    faceplayer
+    msgbox Casino_Text_PrizeVendor, MSGBOX_DEFAULT
+    showcoinsbox 1, 6
+    multichoice 0, 0, MULTI_UNUSED_40, 0
+    switch VAR_RESULT
+        case 0, Casino_Prize_Potion
+        case 1, Casino_Prize_SuperPotion
+        case 2, Casino_Prize_HyperPotion
+        case 3, Casino_Prize_Cancel
+
+Casino_Text_PrizeVendor:
+    .string "Welcome to the prize exchange!\n"
+    .string "Which prize would you like?$"
+
+Casino_Prize_Potion:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
+    removecoins 50
+    giveitem ITEM_POTION
+    goto Casino_PrizeDone
+
+Casino_Prize_SuperPotion:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 100, Casino_NotEnoughCoins
+    removecoins 100
+    giveitem ITEM_SUPER_POTION
+    goto Casino_PrizeDone
+
+Casino_Prize_HyperPotion:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 200, Casino_NotEnoughCoins
+    removecoins 200
+    giveitem ITEM_HYPER_POTION
+    goto Casino_PrizeDone
+
+Casino_NotEnoughCoins:
+    msgbox Casino_Text_NotEnoughCoins, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_PrizeDone:
+    msgbox Casino_Text_PrizeReceived, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_Cancel:
+    release
+    end
+
+Casino_PrizeShop:
+    .2byte ITEM_POTION
+    .2byte ITEM_SUPER_POTION
+    .2byte ITEM_HYPER_POTION
+    .2byte ITEM_NONE
+
+Casino_Text_NotEnoughCoins:
+    .string "You don't have enough coins.$"
+
+Casino_Text_PrizeReceived:
+    .string "Here you go! Enjoy your prize!$"
