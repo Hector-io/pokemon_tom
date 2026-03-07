@@ -60,6 +60,7 @@ Casino_EventScript_PrizeVendor_Kanto::
         case 2, Casino_Prize_Moltres
         case 3, Casino_Prize_Mewtwo
         case 4, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Text_PrizeVendor:
     .string "Welcome to the prize exchange!\n"
@@ -153,6 +154,7 @@ Casino_EventScript_PrizeVendor_Johto::
         case 3, Casino_Prize_Lugia
         case 4, Casino_Prize_HoOh
         case 5, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Raikou:
     checkcoins VAR_TEMP_2
@@ -230,6 +232,7 @@ Casino_EventScript_PrizeVendor_Sinnoh::
         case 4, Casino_Prize_Palkia
         case 5, Casino_Prize_Giratina
         case 6, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Uxie:
     checkcoins VAR_TEMP_2
@@ -318,6 +321,7 @@ Casino_EventScript_PrizeVendor_Unova::
         case 4, Casino_Prize_Zekrom
         case 5, Casino_Prize_Kyurem
         case 6, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Cobalion:
     checkcoins VAR_TEMP_2
@@ -407,6 +411,7 @@ Casino_EventScript_PrizeVendor_Kalos::
         case 4, Casino_Prize_Hoopa
         case 5, Casino_Prize_Volcanion
         case 6, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Xerneas:
     checkcoins VAR_TEMP_2
@@ -496,6 +501,7 @@ Casino_EventScript_PrizeVendor_Alola::
         case 5, Casino_Prize_Lunala
         case 6, Casino_Prize_Necrozma
         case 7, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_TapuKoko:
     checkcoins VAR_TEMP_2
@@ -597,6 +603,7 @@ Casino_EventScript_PrizeVendor_Galar::
         case 4, Casino_Prize_Urshifu
         case 5, Casino_Prize_Calyrex
         case 6, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Zacian:
     checkcoins VAR_TEMP_2
@@ -686,6 +693,7 @@ Casino_EventScript_PrizeVendor_Paldea::
         case 4, Casino_Prize_TingLu
         case 5, Casino_Prize_ChiYu
         case 6, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Koraidon:
     checkcoins VAR_TEMP_2
@@ -773,6 +781,7 @@ Casino_EventScript_PrizeVendor_Mythicals::
         case 3, Casino_Prize_Deoxys
         case 4, Casino_Prize_Arceus
         case 5, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_Mew:
     checkcoins VAR_TEMP_2
@@ -849,6 +858,7 @@ Casino_EventScript_PrizeVendor_Items::
         case 5, Casino_Prize_ReinsOfUnity
         case 6, Casino_EventScript_ItemsPage2
         case 7, Casino_Prize_Cancel
+        case 127, Casino_Prize_Cancel
 
 Casino_EventScript_ItemsPage2::
     multichoice 0, 0, MULTI_CASINO_ITEMS_PAGE2, 0
@@ -860,6 +870,7 @@ Casino_EventScript_ItemsPage2::
         case 4, Casino_Prize_LustrousOrb
         case 5, Casino_Prize_GriseousOrb
         case 6, Casino_EventScript_PrizeVendor_Items
+        case 127, Casino_Prize_Cancel
 
 Casino_Prize_DNASplicers:
     checkcoins VAR_TEMP_2
