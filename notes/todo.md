@@ -60,3 +60,5 @@ Add slot machines in every pokemart. Other gambling stuff too?
 Replace regi trio with victini, guzzlord, lugia
 
 FOSSIL CHANGES
+
+TURN OFF DEBUG AT THE END
