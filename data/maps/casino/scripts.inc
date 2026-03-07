@@ -48,7 +48,7 @@ Casino_Text_CoinVendorWelcome:
     .string "Welcome to the CASINO!\n"
     .string "How many coins would you like?$"
 
-Casino_EventScript_PrizeVendor::
+Casino_EventScript_PrizeVendor_Kanto::
     lock
     faceplayer
     msgbox Casino_Text_PrizeVendor, MSGBOX_DEFAULT
@@ -67,8 +67,8 @@ Casino_Text_PrizeVendor:
 
 Casino_Prize_Articuno:
     checkcoins VAR_TEMP_2
-    goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
-    removecoins 50
+    goto_if_lt VAR_TEMP_2, 600, Casino_NotEnoughCoins
+    removecoins 600
     createmon 0, PARTY_SIZE, SPECIES_ARTICUNO, 50
     msgbox Casino_Text_GotArticuno, MSGBOX_DEFAULT
     release
@@ -76,8 +76,8 @@ Casino_Prize_Articuno:
 
 Casino_Prize_Zapdos:
     checkcoins VAR_TEMP_2
-    goto_if_lt VAR_TEMP_2, 100, Casino_NotEnoughCoins
-    removecoins 100
+    goto_if_lt VAR_TEMP_2, 700, Casino_NotEnoughCoins
+    removecoins 700
     createmon 0, PARTY_SIZE, SPECIES_ZAPDOS, 50
     msgbox Casino_Text_GotZapdos, MSGBOX_DEFAULT
     release
@@ -85,8 +85,8 @@ Casino_Prize_Zapdos:
 
 Casino_Prize_Moltres:
     checkcoins VAR_TEMP_2
-    goto_if_lt VAR_TEMP_2, 200, Casino_NotEnoughCoins
-    removecoins 200
+    goto_if_lt VAR_TEMP_2, 800, Casino_NotEnoughCoins
+    removecoins 800
     createmon 0, PARTY_SIZE, SPECIES_MOLTRES, 50
     msgbox Casino_Text_GotMoltres, MSGBOX_DEFAULT
     release
@@ -94,8 +94,8 @@ Casino_Prize_Moltres:
 
 Casino_Prize_Mewtwo:
     checkcoins VAR_TEMP_2
-    goto_if_lt VAR_TEMP_2, 300, Casino_NotEnoughCoins
-    removecoins 300
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
     createmon 0, PARTY_SIZE, SPECIES_MEWTWO, 70
     msgbox Casino_Text_GotMewtwo, MSGBOX_DEFAULT
     release
@@ -403,7 +403,10 @@ Casino_EventScript_PrizeVendor_Kalos::
         case 0, Casino_Prize_Xerneas
         case 1, Casino_Prize_Yveltal
         case 2, Casino_Prize_Zygarde
-        case 3, Casino_Prize_Cancel
+        case 3, Casino_Prize_Diancie
+        case 4, Casino_Prize_Hoopa
+        case 5, Casino_Prize_Volcanion
+        case 6, Casino_Prize_Cancel
 
 Casino_Prize_Xerneas:
     checkcoins VAR_TEMP_2
@@ -432,6 +435,33 @@ Casino_Prize_Zygarde:
     release
     end
 
+Casino_Prize_Diancie:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1600, Casino_NotEnoughCoins
+    removecoins 1600
+    createmon 0, PARTY_SIZE, SPECIES_DIANCIE, 70
+    msgbox Casino_Text_GotDiancie, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_Hoopa:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1600, Casino_NotEnoughCoins
+    removecoins 1600
+    createmon 0, PARTY_SIZE, SPECIES_HOOPA, 70
+    msgbox Casino_Text_GotHoopa, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_Volcanion:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1700, Casino_NotEnoughCoins
+    removecoins 1700
+    createmon 0, PARTY_SIZE, SPECIES_VOLCANION, 70
+    msgbox Casino_Text_GotVolcanion, MSGBOX_DEFAULT
+    release
+    end
+
 Casino_Text_GotXerneas:
     .string "Tom received XERNEAS!$"
 
@@ -441,6 +471,15 @@ Casino_Text_GotYveltal:
 Casino_Text_GotZygarde:
     .string "Tom received ZYGARDE!$"
 
+Casino_Text_GotDiancie:
+    .string "Tom received DIANCIE!$"
+
+Casino_Text_GotHoopa:
+    .string "Tom received HOOPA!$"
+
+Casino_Text_GotVolcanion:
+    .string "Tom received VOLCANION!$"
+
 
 Casino_EventScript_PrizeVendor_Alola::
     lock
@@ -449,10 +488,50 @@ Casino_EventScript_PrizeVendor_Alola::
     showcoinsbox 1, 6
     multichoice 0, 0, MULTI_CASINO_ALOLA, 0
     switch VAR_RESULT
-        case 0, Casino_Prize_Solgaleo
-        case 1, Casino_Prize_Lunala
-        case 2, Casino_Prize_Necrozma
-        case 3, Casino_Prize_Cancel
+        case 0, Casino_Prize_TapuKoko
+        case 1, Casino_Prize_TapuLele
+        case 2, Casino_Prize_TapuBulu
+        case 3, Casino_Prize_TapuFini
+        case 4, Casino_Prize_Solgaleo
+        case 5, Casino_Prize_Lunala
+        case 6, Casino_Prize_Necrozma
+        case 7, Casino_Prize_Cancel
+
+Casino_Prize_TapuKoko:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
+    createmon 0, PARTY_SIZE, SPECIES_TAPU_KOKO, 70
+    msgbox Casino_Text_GotTapuKoko, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_TapuLele:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
+    createmon 0, PARTY_SIZE, SPECIES_TAPU_LELE, 70
+    msgbox Casino_Text_GotTapuLele, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_TapuBulu:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
+    createmon 0, PARTY_SIZE, SPECIES_TAPU_BULU, 70
+    msgbox Casino_Text_GotTapuBulu, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_TapuFini:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
+    createmon 0, PARTY_SIZE, SPECIES_TAPU_FINI, 70
+    msgbox Casino_Text_GotTapuFini, MSGBOX_DEFAULT
+    release
+    end
 
 Casino_Prize_Solgaleo:
     checkcoins VAR_TEMP_2
@@ -491,6 +570,19 @@ Casino_Text_GotNecrozma:
     .string "Tom received NECROZMA!$"
 
 
+Casino_Text_GotTapuKoko:
+    .string "Tom received TAPU KOKO!$"
+
+Casino_Text_GotTapuLele:
+    .string "Tom received TAPU LELE!$"
+
+Casino_Text_GotTapuBulu:
+    .string "Tom received TAPU BULU!$"
+
+Casino_Text_GotTapuFini:
+    .string "Tom received TAPU FINI!$"
+
+
 Casino_EventScript_PrizeVendor_Galar::
     lock
     faceplayer
@@ -501,7 +593,10 @@ Casino_EventScript_PrizeVendor_Galar::
         case 0, Casino_Prize_Zacian
         case 1, Casino_Prize_Zamazenta
         case 2, Casino_Prize_Eternatus
-        case 3, Casino_Prize_Cancel
+        case 3, Casino_Prize_Kubfu
+        case 4, Casino_Prize_Urshifu
+        case 5, Casino_Prize_Calyrex
+        case 6, Casino_Prize_Cancel
 
 Casino_Prize_Zacian:
     checkcoins VAR_TEMP_2
@@ -530,6 +625,34 @@ Casino_Prize_Eternatus:
     release
     end
 
+Casino_Prize_Kubfu:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 900, Casino_NotEnoughCoins
+    removecoins 900
+    createmon 0, PARTY_SIZE, SPECIES_KUBFU, 65
+    msgbox Casino_Text_GotKubfu, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_Urshifu:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1200, Casino_NotEnoughCoins
+    removecoins 1200
+    createmon 0, PARTY_SIZE, SPECIES_URSHIFU, 70
+    msgbox Casino_Text_GotUrshifu, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_Calyrex:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 2000, Casino_NotEnoughCoins
+    removecoins 2000
+    createmon 0, PARTY_SIZE, SPECIES_CALYREX, 75
+    msgbox Casino_Text_GotCalyrex, MSGBOX_DEFAULT
+    release
+    end
+
+
 Casino_Text_GotZacian:
     .string "Tom received ZACIAN!$"
 
@@ -538,6 +661,15 @@ Casino_Text_GotZamazenta:
 
 Casino_Text_GotEternatus:
     .string "Tom received ETERNATUS!$"
+
+Casino_Text_GotKubfu:
+    .string "Tom received KUBFU!$"
+
+Casino_Text_GotUrshifu:
+    .string "Tom received URSHIFU!$"
+
+Casino_Text_GotCalyrex:
+    .string "Tom received CALYREX!$"
 
 
 Casino_EventScript_PrizeVendor_Paldea::
@@ -549,7 +681,11 @@ Casino_EventScript_PrizeVendor_Paldea::
     switch VAR_RESULT
         case 0, Casino_Prize_Koraidon
         case 1, Casino_Prize_Miraidon
-        case 2, Casino_Prize_Cancel
+        case 2, Casino_Prize_WoChien
+        case 3, Casino_Prize_ChienPao
+        case 4, Casino_Prize_TingLu
+        case 5, Casino_Prize_ChiYu
+        case 6, Casino_Prize_Cancel
 
 Casino_Prize_Koraidon:
     checkcoins VAR_TEMP_2
@@ -569,12 +705,59 @@ Casino_Prize_Miraidon:
     release
     end
 
+Casino_Prize_WoChien:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1400, Casino_NotEnoughCoins
+    removecoins 1400
+    createmon 0, PARTY_SIZE, SPECIES_WO_CHIEN, 70
+    msgbox Casino_Text_GotWoChien, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_ChienPao:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1400, Casino_NotEnoughCoins
+    removecoins 1400
+    createmon 0, PARTY_SIZE, SPECIES_CHIEN_PAO, 70
+    msgbox Casino_Text_GotChienPao, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_TingLu:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1400, Casino_NotEnoughCoins
+    removecoins 1400
+    createmon 0, PARTY_SIZE, SPECIES_TING_LU, 70
+    msgbox Casino_Text_GotTingLu, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_ChiYu:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 1400, Casino_NotEnoughCoins
+    removecoins 1400
+    createmon 0, PARTY_SIZE, SPECIES_CHI_YU, 70
+    msgbox Casino_Text_GotChiYu, MSGBOX_DEFAULT
+    release
+    end
+
 Casino_Text_GotKoraidon:
     .string "Tom received KORAIDON!$"
 
-
 Casino_Text_GotMiraidon:
     .string "Tom received MIRAIDON!$"
+
+Casino_Text_GotWoChien:
+    .string "Tom received WO-CHIEN!$"
+
+Casino_Text_GotChienPao:
+    .string "Tom received CHIEN-PAO!$"
+
+Casino_Text_GotTingLu:
+    .string "Tom received TING-LU!$"
+
+Casino_Text_GotChiYu:
+    .string "Tom received CHI-YU!$"
 
 
 Casino_EventScript_PrizeVendor_Mythicals::
@@ -668,7 +851,10 @@ Casino_EventScript_PrizeVendor_Items::
         case 6, Casino_Prize_RustedShield
         case 7, Casino_Prize_ReinsOfUnity
         case 8, Casino_Prize_PrisonBottle
-        case 9, Casino_Prize_Cancel
+        case 9, Casino_Prize_AdamantOrb
+        case 10, Casino_Prize_LustrousOrb
+        case 11, Casino_Prize_GriseousOrb
+        case 12, Casino_Prize_Cancel
 
 Casino_Prize_DNASplicers:
     checkcoins VAR_TEMP_2
@@ -742,11 +928,39 @@ Casino_Prize_ReinsOfUnity:
     release
     end
 
+
 Casino_Prize_PrisonBottle:
     checkcoins VAR_TEMP_2
     goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
     removecoins 50
     giveitem ITEM_PRISON_BOTTLE
+    msgbox Casino_Text_PrizeReceived, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_AdamantOrb:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
+    removecoins 50
+    giveitem ITEM_ADAMANT_ORB
+    msgbox Casino_Text_PrizeReceived, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_LustrousOrb:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
+    removecoins 50
+    giveitem ITEM_LUSTROUS_ORB
+    msgbox Casino_Text_PrizeReceived, MSGBOX_DEFAULT
+    release
+    end
+
+Casino_Prize_GriseousOrb:
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, 50, Casino_NotEnoughCoins
+    removecoins 50
+    giveitem ITEM_GRISEOUS_ORB
     msgbox Casino_Text_PrizeReceived, MSGBOX_DEFAULT
     release
     end

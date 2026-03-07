@@ -1157,7 +1157,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_CORVIKNIGHT"
+                "species": "SPECIES_GLASTRIER"
               },
               {
                 "min_level": 16,
@@ -1167,7 +1167,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_CORVIKNIGHT"
+                "species": "SPECIES_SPECTRIER"
               }
             ]
           }

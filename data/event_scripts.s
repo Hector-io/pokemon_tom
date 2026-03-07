@@ -1738,3 +1738,21 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/apricorn_tree.inc"
 
 	.include "data/maps/casino/scripts.inc"
+
+	.include "data/maps/casino_rustboro/scripts.inc"
+
+	.include "data/maps/casino_evergrande/scripts.inc"
+
+	.include "data/maps/casino_fortree/scripts.inc"
+
+	.include "data/maps/casino_mossdeep/scripts.inc"
+
+	.include "data/maps/casino_fallarbor/scripts.inc"
+
+	.include "data/maps/casino_dewford/scripts.inc"
+
+	.include "data/maps/casino_verdanturf/scripts.inc"
+
+	.include "data/maps/casino_slateport/scripts.inc"
+
+	.include "data/maps/casino_petalburg/scripts.inc"

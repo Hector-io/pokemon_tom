@@ -134,7 +134,16 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "casino"
+    "casino",
+    "casino_petalburg",
+    "casino_rustboro",
+    "casino_slateport",
+    "casino_dewford",
+    "casino_verdanturf",
+    "casino_fallarbor",
+    "casino_fortree",
+    "casino_mossdeep",
+    "casino_evergrande"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

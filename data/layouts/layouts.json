@@ -9333,6 +9333,96 @@
       "secondary_tileset": "gTileset_MauvilleGameCorner",
       "border_filepath": "data/layouts/casino/border.bin",
       "blockdata_filepath": "data/layouts/casino/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_RUSTBORO",
+      "name": "casino_rustboro_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_rustboro/border.bin",
+      "blockdata_filepath": "data/layouts/casino_rustboro/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_EVERGRANDE",
+      "name": "casino_evergrande_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_evergrande/border.bin",
+      "blockdata_filepath": "data/layouts/casino_evergrande/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_SLATEPORT",
+      "name": "casino_slateport_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_slateport/border.bin",
+      "blockdata_filepath": "data/layouts/casino_slateport/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_VERDANTURF",
+      "name": "casino_verdanturf_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_verdanturf/border.bin",
+      "blockdata_filepath": "data/layouts/casino_verdanturf/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_DEWFORD",
+      "name": "casino_dewford_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_dewford/border.bin",
+      "blockdata_filepath": "data/layouts/casino_dewford/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_FORTREE",
+      "name": "casino_fortree_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_fortree/border.bin",
+      "blockdata_filepath": "data/layouts/casino_fortree/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_PETALBURG",
+      "name": "casino_petalburg_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_petalburg/border.bin",
+      "blockdata_filepath": "data/layouts/casino_petalburg/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_MOSSDEEP",
+      "name": "casino_mossdeep_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_mossdeep/border.bin",
+      "blockdata_filepath": "data/layouts/casino_mossdeep/map.bin"
+    },
+    {
+      "id": "LAYOUT_CASINO_FALLARBOR",
+      "name": "casino_fallarbor_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGameCorner",
+      "border_filepath": "data/layouts/casino_fallarbor/border.bin",
+      "blockdata_filepath": "data/layouts/casino_fallarbor/map.bin"
     }
   ]
 }
