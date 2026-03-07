@@ -418,6 +418,32 @@ RusturfTunnel_EventScript_Mike::
 	msgbox RusturfTunnel_Text_MikePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+
+RusturfTunnel_EventScript_Dracovish::
+	lock
+	faceplayer
+	playse SE_PIN
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+	waitmovement 0
+	msgbox RusturfTunnel_Text_DracovishAppeared, MSGBOX_DEFAULT
+	playmoncry SPECIES_DRACOVISH, CRY_MODE_NORMAL
+	waitmoncry
+	setwildbattle SPECIES_DRACOVISH, 20, ITEM_NONE
+	dowildbattle
+	goto_if_eq VAR_RESULT, 1, RusturfTunnel_DracovishRemove
+	goto_if_eq VAR_RESULT, 2, RusturfTunnel_DracovishRemove
+	release
+	end
+
+RusturfTunnel_DracovishRemove::
+	setflag FLAG_RUSTURF_DRACOVISH
+	removeobject LOCALID_RUSTURF_TUNNEL_DRACOVISH
+	release
+	end
+
+RusturfTunnel_Text_DracovishAppeared:
+	.string "A strange ancient POKéMON appeared!$"
+
 RusturfTunnel_Text_ComeAndGetSome:
 	.string "What, are you coming?\n"
 	.string "Come and get some, then!$"
