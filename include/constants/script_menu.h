@@ -178,6 +178,7 @@
 #define MULTI_CASINO_PALDEA                164
 #define MULTI_CASINO_MYTHICALS             165
 #define MULTI_CASINO_ITEMS                 166
+#define MULTI_CASINO_ITEMS_PAGE2           167
 
 // Legacy aliases (kept so older references still compile)
 #define MULTI_UNUSED_42 MULTI_CASINO_SINNOH

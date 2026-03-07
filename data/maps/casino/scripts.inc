@@ -838,23 +838,28 @@ Casino_Text_GotArceus:
 Casino_EventScript_PrizeVendor_Items::
     lock
     faceplayer
-    msgbox Casino_Text_PrizeVendor, MSGBOX_DEFAULT
     showcoinsbox 1, 6
     multichoice 0, 0, MULTI_CASINO_ITEMS, 0
     switch VAR_RESULT
+        case 0, Casino_Prize_NSolarizer
+        case 1, Casino_Prize_NLunarizer
+        case 2, Casino_Prize_RevealGlass
+        case 3, Casino_Prize_RustedSword
+        case 4, Casino_Prize_RustedShield
+        case 5, Casino_Prize_ReinsOfUnity
+        case 6, Casino_EventScript_ItemsPage2
+        case 7, Casino_Prize_Cancel
+
+Casino_EventScript_ItemsPage2::
+    multichoice 0, 0, MULTI_CASINO_ITEMS_PAGE2, 0
+    switch VAR_RESULT
         case 0, Casino_Prize_DNASplicers
-        case 1, Casino_Prize_NSolarizer
-        case 2, Casino_Prize_NLunarizer
-        case 3, Casino_Prize_RevealGlass
-        case 4, Casino_Prize_Gracidea
-        case 5, Casino_Prize_RustedSword
-        case 6, Casino_Prize_RustedShield
-        case 7, Casino_Prize_ReinsOfUnity
-        case 8, Casino_Prize_PrisonBottle
-        case 9, Casino_Prize_AdamantOrb
-        case 10, Casino_Prize_LustrousOrb
-        case 11, Casino_Prize_GriseousOrb
-        case 12, Casino_Prize_Cancel
+        case 1, Casino_Prize_Gracidea
+        case 2, Casino_Prize_PrisonBottle
+        case 3, Casino_Prize_AdamantOrb
+        case 4, Casino_Prize_LustrousOrb
+        case 5, Casino_Prize_GriseousOrb
+        case 6, Casino_EventScript_PrizeVendor_Items
 
 Casino_Prize_DNASplicers:
     checkcoins VAR_TEMP_2

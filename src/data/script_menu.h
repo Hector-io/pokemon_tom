@@ -381,14 +381,20 @@ static const struct MenuAction MultichoiceList_Casino_Mythicals[] =
 
 static const struct MenuAction MultichoiceList_Casino_Items[] =
 {
-    {COMPOUND_STRING("DNA SPLICERS - 50 COINS")},
     {COMPOUND_STRING("N-SOLARIZER - 50 COINS")},
     {COMPOUND_STRING("N-LUNARIZER - 50 COINS")},
     {COMPOUND_STRING("REVEAL GLASS - 50 COINS")},
-    {COMPOUND_STRING("GRACIDEA - 50 COINS")},
     {COMPOUND_STRING("RUSTED SWORD - 50 COINS")},
     {COMPOUND_STRING("RUSTED SHIELD - 50 COINS")},
     {COMPOUND_STRING("REINS OF UNITY - 50 COINS")},
+    {COMPOUND_STRING("NEXT PAGE")},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_Casino_Items_Page2[] =
+{
+    {COMPOUND_STRING("DNA SPLICERS - 50 COINS")},
+    {COMPOUND_STRING("GRACIDEA - 50 COINS")},
     {COMPOUND_STRING("PRISON BOTTLE - 50 COINS")},
     {COMPOUND_STRING("ADAMANT ORB - 50 COINS")},
     {COMPOUND_STRING("LUSTROUS ORB - 50 COINS")},
@@ -1265,6 +1271,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_CASINO_PALDEA]              = MULTICHOICE(MultichoiceList_Casino_Paldea),
     [MULTI_CASINO_MYTHICALS]           = MULTICHOICE(MultichoiceList_Casino_Mythicals),
     [MULTI_CASINO_ITEMS]               = MULTICHOICE(MultichoiceList_Casino_Items),
+    [MULTI_CASINO_ITEMS_PAGE2]         = MULTICHOICE(MultichoiceList_Casino_Items_Page2),
     [MULTI_VENDING_MACHINE]            = MULTICHOICE(MultichoiceList_VendingMachine),
     [MULTI_MACH_BIKE_INFO]             = MULTICHOICE(MultichoiceList_MachBikeInfo),
     [MULTI_ACRO_BIKE_INFO]             = MULTICHOICE(MultichoiceList_AcroBikeInfo),
