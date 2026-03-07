@@ -57,7 +57,22 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN_MART",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_FALLARBOR_TOWN_MART",
+      "dest_warp_id": "2"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {

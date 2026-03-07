@@ -1,7 +1,7 @@
 {
   "id": "MAP_SLATEPORT_CITY_MART",
   "name": "SlateportCity_Mart",
-  "layout": "LAYOUT_MART",
+  "layout": "LAYOUT_MART_CASINO",
   "music": "MUS_POKE_MART",
   "region_map_section": "MAPSEC_SLATEPORT_CITY",
   "requires_flash": false,
@@ -30,7 +30,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 4,
+      "x": 5,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -69,6 +69,13 @@
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_CASINO_SLATEPORT",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
