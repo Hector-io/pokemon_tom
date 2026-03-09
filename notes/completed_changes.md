@@ -182,6 +182,35 @@ Major systems implemented and tested:
 - Multi‑page menu workaround for GBA UI limitations
 
 
+# Custom Static Encounter
+
+## Rusturf Tunnel – Dracovish
+
+A custom static encounter has been added to **Rusturf Tunnel** featuring Tom's favourite Pokémon.
+
+Encounter details:
+
+- Overworld **Dracovish sprite placed in Rusturf Tunnel**
+- Interaction triggers a **Level 20 wild battle**
+- Message displayed before battle:
+  
+  ```
+  A strange ancient POKéMON appeared!
+  ```
+
+Encounter behaviour:
+
+- Dracovish plays its **cry before the battle starts**
+- A **reaction animation (exclamation mark + sound)** occurs when the player interacts with it
+- After the battle, if Dracovish is **defeated or caught**, it **disappears permanently** using a map flag
+- The encounter cannot be repeated once completed
+
+Purpose:
+
+- Add a memorable early‑game scripted encounter
+- Include Tom's favourite Pokémon in the world in a unique way
+
+
 All systems compile and function correctly in-game.
 
 ---
