@@ -16,6 +16,8 @@ Replacement: None
 
 ## Steven Stone
 Replacement: Me
+Music: Pennies theme gen 9
+Team: Volcarona or Iron Moth, Whimsicott or Tinkaton, Haxorus or Hydragion, Clodsire or Grimmsnarl, Sun Necrozma or Guzzlord, Kyurem black or white or Eternatus.
 
 ## Battle Frontier Guy
 Original: Scott
@@ -200,7 +202,8 @@ Target track: **Green Hill Zone (instrumental / GBA rendition)**
 
 ### Team Design
 Current idea:
-Not got that far.
+Sonic - Jolteon and Ninjask
+Shadow - Darkrai and Weavile
 
 ### Gym Trainers
 Change Dialogue
@@ -251,6 +254,7 @@ Target track: **Pokemon SV gym battle music (instrumental / GBA rendition)**
 ### Team Design
 Current idea:
 Piers' team
+Obstagoon, Toxtricity, Malamar, Skuntank, Grimmsnarl
 
 ## Elite Four 2
 Original Leader: Pheobe
@@ -304,7 +308,8 @@ Target track: **Master of Puppets - Metallica (instrumental / GBA rendition)**
 
 ### Team Design
 Current idea:
-Not got that far.  
+Dragonite, Hydreigon, Haxorus, Dragapult, Salamence
+ 
 
 ## Champion
 Original Leader: Wallace
@@ -326,4 +331,4 @@ Target track: **Halo OST (undecided on what song) (instrumental / GBA rendition)
 
 ### Team Design
 Current idea:
-Not got that far.
+Aegislash, Metagross, Tyranitar, Genesect, Iron Valiant, Mega Salmence.
