@@ -36,3 +36,31 @@ Mt pyre is almost entirely greavard 10% sinistea later and 2% silgylph at summit
 Add tinkatink and hatterne and pallosand lines
 
 Add charcadet, gimmeghoul, palafin and their respective evolution requirements
+
+Add mega evolution and their stones:
+
+Early game Megas (badges 1-3)
+    Pidgeot, Beedrill, Medicham, Manectric, Ampharos, Mega Feraligatr is one!!
+
+Mid Game
+    Camerupt, Bannette, Altaria, Absol (& Absol Z), Gengar, Chandelure, Raichu X Y, Glimmora
+
+Late Game 
+    Salmence, Metagross, Lucario
+
+Already have (need the stones)
+    Kangaskhan
+	Gyarados
+	Mawile
+	Sharpedo
+	Excadrill
+	Falinks
+	Golurk
+	Scovillain
+    Crabominable
+    Glimmora
+    Garchomp
+    Rayquazza, Kyogre, Groudon
+    Togekiss
+    Baxcalibur
+    Zygarde, Necrozma in casino

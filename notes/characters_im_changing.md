@@ -17,7 +17,10 @@ Replacement: None
 ## Steven Stone
 Replacement: Me
 Music: Pennies theme gen 9
+
 Team: Volcarona or Iron Moth, Whimsicott or Tinkaton, Haxorus or Hydragion, Clodsire or Grimmsnarl, Sun Necrozma or Guzzlord, Kyurem black or white or Eternatus.
+
+OR: Go full overkill... Sun Necrozma, Kyurem Black, Gigantimax Grimmsnarl, Tera Type Fairy Tinkaton, Z move enabled Alolan Raichu, Mega Magearna/CharizardX/Glimmora/AbsolZ/Gengar
 
 ## Battle Frontier Guy
 Original: Scott
