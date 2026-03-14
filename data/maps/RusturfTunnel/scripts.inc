@@ -430,19 +430,27 @@ RusturfTunnel_EventScript_Dracovish::
 	waitmoncry
 	setwildbattle SPECIES_DRACOVISH, 20, ITEM_NONE
 	dowildbattle
-	goto_if_eq VAR_RESULT, 1, RusturfTunnel_DracovishRemove
-	goto_if_eq VAR_RESULT, 2, RusturfTunnel_DracovishRemove
-	release
-	end
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, RusturfTunnel_DracovishCaught
+	goto RusturfTunnel_DracovishRanAway
 
-RusturfTunnel_DracovishRemove::
+RusturfTunnel_DracovishCaught::
 	setflag FLAG_RUSTURF_DRACOVISH
 	removeobject LOCALID_RUSTURF_TUNNEL_DRACOVISH
 	release
 	end
 
+RusturfTunnel_DracovishRanAway::
+	msgbox RusturfTunnel_Text_DracovishRanAway, MSGBOX_DEFAULT
+	release
+	end
+
 RusturfTunnel_Text_DracovishAppeared:
 	.string "A strange ancient POKéMON appeared!$"
+
+RusturfTunnel_Text_DracovishRanAway:
+	.string "DRACOVISH is startled...\n"
+	.string "But looks like it'll let you try again!.$"
 
 RusturfTunnel_Text_ComeAndGetSome:
 	.string "What, are you coming?\n"
