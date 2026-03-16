@@ -568,6 +568,7 @@
 #define OBJ_EVENT_PAL_TAG_METEORITE               0x1137
 #define OBJ_EVENT_PAL_TAG_SEAGALLOP               0x1138
 #define OBJ_EVENT_PAL_TAG_SS_ANNE                 0x1139
+#define OBJ_EVENT_PAL_TAG_HECTOR                  0x1140
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
