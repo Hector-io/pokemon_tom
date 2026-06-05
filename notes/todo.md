@@ -22,7 +22,7 @@ Add an NPC in each casino talking about what region legendaries the casino is fo
 
 Add an NPC before rusturf tunnel saying MAKE SURE YOU SAVE BEFORE FIGHTING DRACOVISH something like "I heard there is an ancient powerful pokemon within the tunnel. If only I could SAVE before I attempt to fight it in case anything goes wrong. If I had THE ABILITY TO SAVE I would definitely do that before going in the tunnel."
 
-NPC main character sprite changes and script changes (brendan, scott, may, steven, maxie, archie etc.)
+NPC main character sprite changes and script changes (brendan, scott, may, maxie, archie etc.)
 
 Team changes for rival, steven, enemy teams etc.
 
