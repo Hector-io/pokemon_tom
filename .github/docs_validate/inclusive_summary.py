@@ -5,7 +5,6 @@ Checks that all documentation pages that should be mentioned in
 `docs/SUMMARY.md` are mentioned the file
 """
 
-import glob
 import re
 import os
 from pathlib import Path
@@ -38,8 +37,8 @@ if not errorLines:
                 errorLines.append(f"- {lineNo}: {line.strip()}")
 
 if not errorLines:
-    for pathName in glob.glob("**/*.md", root_dir="docs", recursive=True):
-        path = Path(pathName)
+    for documentationFile in Path("docs").rglob("*.md"):
+        path = documentationFile.relative_to("docs")
         if path == Path("SUMMARY.md"):
             pass
         elif path == Path("changelogs/template.md"):

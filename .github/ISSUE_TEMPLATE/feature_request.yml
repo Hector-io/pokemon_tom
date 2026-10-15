@@ -1,0 +1,28 @@
+name: Feature or content idea
+description: Suggest a focused change for Pokémon TOMGUY Version.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a personal ROM-hack project, so ideas are considered against the current project plan and available time.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Describe the proposed feature, story change, encounter change, or quality-of-life improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: player_value
+    attributes:
+      label: Player value and alternatives
+      description: Explain why the change would improve the game and note any alternatives you considered.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or mockups
+      description: Add links, screenshots, or other context if useful. Do not upload ROM files or unlicensed assets.
+    validations:
+      required: false

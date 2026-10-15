@@ -1,0 +1,48 @@
+name: Bug report
+description: Report a reproducible problem in Pokémon TOMGUY Version.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Please do not include ROM files or copyrighted game assets in the issue.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Overworld, maps, or events
+        - Battle, trainer, or Pokémon data
+        - Encounter, item, or progression data
+        - Graphics, text, or audio
+        - Build tools or development setup
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behaviour
+      description: Explain what you expected, what happened instead, and when it first occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the map, event, Pokémon, item, save state, or input sequence when relevant.
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or build tested
+      description: Paste the Git commit hash or identify the ROM build.
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or additional context
+      description: Attach screenshots, logs, or a save state if they make reproduction easier.
+    validations:
+      required: false
